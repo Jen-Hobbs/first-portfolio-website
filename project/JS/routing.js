@@ -2,9 +2,16 @@ var app = angular.module("templater", ["ngRoute"]);
 app.config(function($routeProvider){
     $routeProvider
     .when("/", {
-        templateUrl : "templates/main.htm"
+        templateUrl : "templates/Home.htm"
+    })
+    .when("/Education", {
+        templateUrl : "templates/Education.htm",
+        controller: "education"
     })
     .when("/Projects", {
-        templateUrl : "templates/projects.htm"
+        templateUrl : "templates/Projects.htm"
+    })
+    .when("/Skills", {
+        templateUrl : "templates/Skills.htm"
     })
 })
