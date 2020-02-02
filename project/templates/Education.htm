@@ -1,15 +1,21 @@
-<a href="#!Education"><h2>Education</h2></a>
-<div>
-    <li ng-repeat="x in educationInfo">
+<a href="#!Education" onclick='hide("educationShow")'><h2>Education</h2></a>
+<div id="educationShow">
+    <ul>
+    <li ng-repeat="education in educationInfo">
         <div>
-            <h3>{{x.name}}</h3>
-            <h4>{{x.degree}}</h4>
-            <h5>{{x.startDate}} - {{x.endDate}}</h5>
+            <h3>{{education.name}}</h3>
+            <h4>{{education.degree}}</h4>
+            <h5>{{education.startDate}} - {{education.endDate}}</h5>
+            <ul>
+                <li ng-repeat="eduList in education.information">
+                    <p>{{eduList.a}}</p>
+                </li>
+            </ul>
         </div>
         <div>
-            <p>{{x.information}}</p>
         </div>
     </li>
+    </ul>
 </div>
 
 

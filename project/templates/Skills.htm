@@ -1,4 +1,13 @@
 <a href="#!Education"><h2>Education</h2></a>
 <a href="#!Projects"><h2>Projects</h2></a>
-<a href="#!Skills"><h2>Skills</h2></a>
+<a href="#!Skills" onclick='hide("skillDisplay")'><h2>Skills</h2></a>
+
+<div id="skillDisplay">
+    <ul>
+        <li ng-repeat="skill in skillsInfo | orderBy : '-star'">
+            <p ng-if="$odd">{{skill.skill}}<span ng-repeat= "s in getNumber(skill.star) track by $index" class="glyphicon glyphicon-star"></span><span ng-repeat= "s in getEmpty(skill.star) track by $index" class="glyphicon glyphicon-star-empty"></span></p>
+            <p ng-if="$even" style="background-color: brown;">{{skill.skill}}<span ng-repeat= "s in getNumber(skill.star) track by $index" class="glyphicon glyphicon-star"></span><span ng-repeat= "s in getEmpty(skill.star) track by $index" class="glyphicon glyphicon-star-empty"></span></p>
+        </li>
+    </ul>
+</div>
 <div><h2>Contact</h2></div>

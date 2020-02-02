@@ -12,6 +12,7 @@ app.config(function($routeProvider){
         templateUrl : "templates/Projects.htm"
     })
     .when("/Skills", {
-        templateUrl : "templates/Skills.htm"
+        templateUrl : "templates/Skills.htm",
+        controller: "skills"
     })
 })
