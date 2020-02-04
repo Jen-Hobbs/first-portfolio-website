@@ -9,7 +9,8 @@ app.config(function($routeProvider){
         controller: "education"
     })
     .when("/Projects", {
-        templateUrl : "templates/Projects.htm"
+        templateUrl : "templates/Projects.htm",
+        controller: "projects"
     })
     .when("/Skills", {
         templateUrl : "templates/Skills.htm",
