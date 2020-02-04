@@ -94,6 +94,19 @@ ul.education{
     list-style-type: disc;
 }
 @media screen and (max-width: 700px){
+    h2{
+        padding: 40px 0px;
+        font-size: 25px;
+    }
+    .nav1:hover{
+        padding-top: 38px;
+        padding-bottom: 38px;
+    }
+    .nav2:hover{
+        padding-top: 38px;
+        padding-bottom: 38px;
+    
+    }
     .about-container{
         flex-direction: column;
     }
@@ -109,5 +122,16 @@ ul.education{
     }
     .education-container{
         flex-direction: column;
+    }
+    ul.education{
+        margin-top: 10px;
+        padding-left: 20px;
+    }
+    div.education{
+        margin: 0px;
+        width: 100%
+    }
+    h3.education{
+        margin-right: 0px;
     }
 }
