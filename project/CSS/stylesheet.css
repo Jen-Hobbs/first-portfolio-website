@@ -3,20 +3,6 @@ body{
     max-width: 1250px;
     margin: auto;
 }
-.nav1{
-    background-color: #000000;
-    
-}
-.nav2{
-    background-color: #6B6D76;
-}
-.line{
-    width: 500px;
-    margin: auto;
-    border-bottom: 3px solid #BCABAE;
-    height: 30px;
-
-}
 h2{
     color: #BCABAE;
     text-align: center;
@@ -31,6 +17,42 @@ h1{
     padding-top: 60px;
     padding-bottom: 30px;
 }
+h3{
+    font-size: 30px;
+}
+h5{
+    font-weight: bold;
+}
+.nav1{
+    background-color: #000000;
+}
+.nav2{
+    background-color: #6B6D76;
+}
+.nav1:hover{
+    background-color: #161616;
+    border: 2px solid #000000;
+    padding-top: 78px;
+    padding-bottom: 78px;
+}
+.nav2:hover{
+    background-color: rgb(119, 121, 129);
+    border: 2px solid #6B6D76;
+    padding-top: 78px;
+    padding-bottom: 78px;
+
+}
+.line{
+    width: 500px;
+    margin: auto;
+    border-bottom: 3px solid #BCABAE;
+    height: 30px;
+
+}
+a:hover{
+    text-decoration: none;
+}
+
 .about-container{
     display: flex;
     flex-wrap: wrap;
@@ -53,10 +75,24 @@ img.about{
 }
 h3.about{
     text-align: center;
-
 }
-
-
+.no-bullet{
+    list-style-type: none;
+}
+.education-container{
+    display: flex;
+}
+div.education{
+    margin: 20px 30px;
+    width: 50%
+}
+h3.education{
+    margin-right: 70px;
+}
+ul.education{
+    margin-top: 20px;
+    list-style-type: disc;
+}
 @media screen and (max-width: 700px){
     .about-container{
         flex-direction: column;
@@ -70,5 +106,8 @@ h3.about{
     .line{
         width: 200px;
         border-bottom: 2px solid #BCABAE;
+    }
+    .education-container{
+        flex-direction: column;
     }
 }
