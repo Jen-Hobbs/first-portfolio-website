@@ -1,12 +1,12 @@
-<a href="#!Education"><h2>Education</h2></a>
-<a href="#!Projects" onclick='hide("projectsShow")'><h2>Projects</h2></a>
+<a href="#!Education"><h2 class="nav1">Education<div class="line"></div></h2></a>
+<a href="#!Projects" onclick='hide("projectsShow")'><h2 class="nav2">Projects<div class="line"></div></h2></a>
 <div id="projectsShow">
     <h2>hello world</h2>
     <ul>
     <li ng-repeat="project in projectInfo">
         <div ng-if="$odd">
         <div >
-            <h2><img src='Images/{{project.img}}'>{{project.name}}</h2>
+            <h3><img src='Images/{{project.img}}'>{{project.name}}</h3>
         </div>
         <div>
             <p>{{project.description}}</p>
@@ -24,5 +24,5 @@
     </li>
     </ul>
 </div>
-<a href="#!Skills"><h2>Skills</h2></a>
-<div><h2>Contact</h2></div>
+<a href="#!Skills"><h2 class="nav1">Skills<div class="line"></div></h2></a>
+<div><h2 class="nav2">Contact<div class="line"></div></h2></div>
