@@ -213,5 +213,10 @@ div.skills-stars{
     div.project-title{
         text-align: center;
     }
+    li.skill{
+        float: none;
+        width: 100%;
+
+    }
 
 }
