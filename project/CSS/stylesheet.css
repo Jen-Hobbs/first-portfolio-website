@@ -28,7 +28,9 @@ h5{
 .no-bullet{
     list-style-type: none;
 }
-
+.clear{
+    clear: both;
+}
 /* navigation buttons css */
 .line{
     width: 500px;
@@ -127,6 +129,36 @@ img.project{
     border-radius: 50%;
     margin: 0px 20px;
 }
+
+/* skills css */
+li.skill{
+    width: 50%;
+    float: left;
+    font-size: 16px;
+    margin: 10px 0px;
+    
+}
+.skill-container{
+    display: flex;
+}
+div.skills-name{
+    flex: 20%;
+    margin-left: 50px;
+}
+div.skills-stars{
+    flex: 80%
+}
+.star{
+    margin: 3px;
+}
+.star:nth-child(1){
+    margin-left: 20px;
+}
+
+
+/* .skill:nth-child(even){
+    float: right;
+} */
 
 
 @media screen and (max-width: 700px){

@@ -3,6 +3,33 @@ app.controller('skills', function($scope){
         skill: "c", star: 3
     },
     {
+        skill: "AngularJS", star: 3
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
+        skill: "c#", star: 4
+    },
+    {
         skill: "c#", star: 4
     }]
     $scope.getNumber = function(num) {

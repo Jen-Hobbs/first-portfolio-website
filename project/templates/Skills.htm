@@ -3,11 +3,29 @@
 <a href="#!Skills" onclick='hide("skillDisplay")'><h2 class="nav1">Skills<div class="line"></div></h2></a>
 
 <div id="skillDisplay">
-    <ul>
-        <li ng-repeat="skill in skillsInfo | orderBy : '-star'">
-            <p ng-if="$odd">{{skill.skill}}<span ng-repeat= "s in getNumber(skill.star) track by $index" class="glyphicon glyphicon-star"></span><span ng-repeat= "s in getEmpty(skill.star) track by $index" class="glyphicon glyphicon-star-empty"></span></p>
-            <p ng-if="$even" style="background-color: brown;">{{skill.skill}}<span ng-repeat= "s in getNumber(skill.star) track by $index" class="glyphicon glyphicon-star"></span><span ng-repeat= "s in getEmpty(skill.star) track by $index" class="glyphicon glyphicon-star-empty"></span></p>
+    <ul class = "no-bullet">
+        <li ng-repeat="skill in skillsInfo | orderBy : '-star'" class="skill">
+            <div class="skill-container" ng-if="$odd">
+                <div class="skills-name">
+                    <p>{{skill.skill}}</p>
+                </div>
+                <div class="skills-stars">
+                    <span ng-repeat= "s in getNumber(skill.star) track by $index"  class="glyphicon glyphicon-star star"></span>
+                    <span ng-repeat= "s in getEmpty(skill.star) track by $index"  class="glyphicon glyphicon-star-empty star" ></span>
+                </div>
+            </div>
+            <div class="skill-container" ng-if="$even">
+                <div class="skills-name">
+                    <p>{{skill.skill}}</p>
+                </div>
+                <div class="skills-stars">
+                    <span ng-repeat= "s in getNumber(skill.star) track by $index" class="glyphicon glyphicon-star star"></span>
+                    <span ng-repeat= "s in getEmpty(skill.star) track by $index" class="glyphicon glyphicon-star-empty star"></span>
+                </div>
+
+            </div>
         </li>
     </ul>
 </div>
+<div class="clear"></div>
 <div><h2 class="nav2">Contact<div class="line"></div></h2></div>
