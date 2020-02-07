@@ -1,7 +1,10 @@
+
 body{
-    background-color: #FAF9F9;
+    background-color: #746D75;
     max-width: 1250px;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
 }
 h2{
     color: #BCABAE;
@@ -14,14 +17,22 @@ h2{
 }
 h1{
     text-align: center;
-    padding-top: 60px;
+    padding-top: 80px;
     padding-bottom: 30px;
+    font-family: 'Lora', serif;
+    font-size: 50px;
+    font-weight: bolder;
+    margin-top: 0px;
 }
 h3{
+    text-align: center;
     font-size: 30px;
+    font-family: 'Lora', serif;
+    padding: 20px 0px;
 }
 h5{
     font-weight: bold;
+    
 }
 
 /* generic css */
@@ -31,6 +42,13 @@ h5{
 .clear{
     clear: both;
 }
+.seperateLists{
+    width: 500px;
+    margin: auto;
+    border-bottom: 3px solid #BCABAE;
+    height: 20px;
+}
+
 /* navigation buttons css */
 .line{
     width: 500px;
@@ -63,29 +81,47 @@ a:hover{
 }
 
 /* about page css */
-.about-container{
+.about-me{
+    background-color: #B36F69;
+}
+.about-me-line{
+    border-bottom: 1px solid black;
+    max-width: 800px;
+    margin: auto;
+}
+.about-me-line2{
+    max-width: 150px;
+    border-bottom: 1px solid black;
+    margin: auto;
+}
+.split-container{
     display: flex;
     flex-wrap: wrap;
+    padding: 30px 150px;
 }
-.about-open{
-    flex: 30%;
+div.about-width{
+    padding-right: 30px;
+    padding-left: 10px;
 }
-.about-description{
-    flex: 70%;
-    margin-top: 70px;
+h3.about-width{
+    max-width: 350px;
+    margin: auto;
+}
+.split{
+    flex: 50%
 }
 img.about{
-    border-radius: 50%;
-    width: 50%;
+    border-radius: 30%;
+    border: 2px dashed black;
+    width: 60%;
+    min-width: 300px;
     margin-left: auto;
     margin-right: auto;
     display: block;
     margin-top: 30px;
     margin-bottom: 30px;
 }
-h3.about{
-    text-align: center;
-}
+
 
 /* education page css */
 .education-container{
@@ -97,6 +133,7 @@ div.education{
 }
 h3.education{
     margin-right: 70px;
+    
 }
 ul.education{
     margin-top: 20px;
@@ -125,8 +162,7 @@ div.project-description{
     margin: 15px 20px;
 }
 img.project{
-    width: 150px;
-    border-radius: 50%;
+    height: 200px;
     margin: 0px 20px;
 }
 
@@ -175,15 +211,24 @@ div.skills-stars{
         padding-bottom: 38px;
     
     }
+    /* about css */
+
     .about-container{
         flex-direction: column;
     }
-    div.about-description{
-        margin-bottom: 20px;
+    .about-me-line{
+        width: 200px;
     }
-    img.about{
-        margin-bottom: 10px;
+    h1{
+        padding: 30px 0px;
     }
+    div.split-container{
+        padding: 0px;
+    }
+    .about-me{
+        padding-bottom: 20px;
+    }
+
     .line{
         width: 200px;
         border-bottom: 2px solid #BCABAE;

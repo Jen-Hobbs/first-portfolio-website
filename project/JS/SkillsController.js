@@ -1,36 +1,27 @@
 app.controller('skills', function($scope){
     $scope.skillsInfo = [{
-        skill: "c", star: 3
+        skill: "C#", star: 3
     },
     {
-        skill: "AngularJS", star: 3
+        skill: "AngularJS", star: 1
     },
     {
-        skill: "c#", star: 4
+        skill: "Java", star: 2
     },
     {
-        skill: "c#", star: 4
+        skill: "Javascript", star: 3
     },
     {
-        skill: "c#", star: 4
+        skill: "Node", star: 2
     },
     {
-        skill: "c#", star: 4
+        skill: "CSS/HTML", star: 3
     },
     {
-        skill: "c#", star: 4
+        skill: "SQL", star: 3
     },
     {
-        skill: "c#", star: 4
-    },
-    {
-        skill: "c#", star: 4
-    },
-    {
-        skill: "c#", star: 4
-    },
-    {
-        skill: "c#", star: 4
+        skill: "Python", star: 1
     }]
     $scope.getNumber = function(num) {
         return new Array(num);   
