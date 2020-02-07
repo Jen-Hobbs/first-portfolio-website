@@ -1,31 +1,40 @@
-<a href="#!Education" onclick='hide("educationShow")'><h2 class="nav1">Education<div class="line"></div></h2></a>
+<a href="#!Education" onclick='hide("educationShow")'>
+    <h2 class="education-nav">Education<div class="line"></div>
+    </h2>
+</a>
 <div id="educationShow">
-    <ul class="no-bullet">
-    <li ng-repeat="education in educationInfo">
-        <div class = "education-container">
-
+    <div class="display-width">
         
-        <div class="education">
-            <h3 class="education">{{education.name}}</h3>
-            <h4 class="education">{{education.degree}}</h4>
-        </div>
-    
-        <div class="education">
-            <h5 class="education">{{education.startDate}} - {{education.endDate}}</h5>
-            <ul class="education">
-                <li ng-repeat="eduList in education.information">
-                    <p>{{eduList.a}}</p>
-                </li>
-            </ul>
-        </div>
-        </div>
-        <div class= "seperateLists"></div>
-    </li>
-    </ul>
-    
+            <div ng-repeat="education in educationInfo" class="seperate-lists last-list">
+                <div class="education-container">
+                    <div class="education">
+                        <h3 class="education">{{education.name}}</h3>
+                        <h4 class="education">{{education.degree}}</h4>
+                        <h5 class="education">{{education.startDate}} - {{education.endDate}}</h5>
+                    </div>
+                    <div class="education">
+                        <ul class="education">
+                            <li ng-repeat="eduList in education.information">
+                                <p>{{eduList.a}}</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        
+    </div>
 </div>
 
 
-<a href="#!Projects" ><h2 class="nav2">Projects<div class="line"></div></h2></a>
-<a href="#!Skills"><h2 class="nav1">Skills<div class="line"></div></h2></a>
-<div><h2 class="nav2">Contact<div class="line"></div></h2></div>
+<a href="#!Projects">
+    <h2 class="projects-nav">Projects<div class="line"></div>
+    </h2>
+</a>
+<a href="#!Skills">
+    <h2 class="skills-nav">Skills<div class="line"></div>
+    </h2>
+</a>
+<div>
+    <h2 class="contact-nav">Contact<div class="line"></div>
+    </h2>
+</div>

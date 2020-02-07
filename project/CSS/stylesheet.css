@@ -1,19 +1,18 @@
 
 body{
-    background-color: #746D75;
-    max-width: 1250px;
+    background-color: white;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0px;
 }
 h2{
-    color: #BCABAE;
+    color: #E3CAC8;
     text-align: center;
     padding-top: 80px;
     padding-bottom: 80px;
     margin: 0px;
-
-
+    font-family: 'Lora', serif;
+    font-weight: bold;
 }
 h1{
     text-align: center;
@@ -25,14 +24,21 @@ h1{
     margin-top: 0px;
 }
 h3{
-    text-align: center;
     font-size: 30px;
     font-family: 'Lora', serif;
-    padding: 20px 0px;
+}
+h4{
+    font-family: 'Merriweather', serif;
+    font-size: 20px;
 }
 h5{
-    font-weight: bold;
     
+    font-family: 'Merriweather', serif;
+    font-size: 18px;
+}
+p{
+    font-size: 18px;
+    font-family: 'Merriweather', serif;
 }
 
 /* generic css */
@@ -42,11 +48,17 @@ h5{
 .clear{
     clear: both;
 }
-.seperateLists{
-    width: 500px;
+.seperate-lists{
     margin: auto;
-    border-bottom: 3px solid #BCABAE;
-    height: 20px;
+    border-bottom: 2px solid lightgray;
+    padding: 20px 70px;
+}
+.last-list:last-child{
+    border-bottom: 0px solid white !important;
+}
+.display-width{
+    max-width: 1250px;
+    margin: auto;
 }
 
 /* navigation buttons css */
@@ -57,33 +69,36 @@ h5{
     height: 30px;
 
 }
-.nav1{
+.education-nav{
+    background-color: #D8D2DC;
+    color: black;
+}
+
+.skills-nav{
+    background-color: #122C34;
+}
+.projects-nav{
+    background-color: #283044;
+}
+.contact-nav{
     background-color: #000000;
 }
-.nav2{
-    background-color: #6B6D76;
-}
-.nav1:hover{
-    background-color: #161616;
-    border: 2px solid #000000;
-    padding-top: 78px;
-    padding-bottom: 78px;
-}
-.nav2:hover{
-    background-color: rgb(119, 121, 129);
-    border: 2px solid #6B6D76;
-    padding-top: 78px;
-    padding-bottom: 78px;
 
-}
 a:hover{
     text-decoration: none;
 }
-
+.linkedin{
+    color: #BCABAE;
+    text-align: center;
+    font-family: 'Lora', serif;
+    margin: -40px auto 0px;
+    padding-bottom: 20px;
+}
 /* about page css */
 .about-me{
     background-color: #B36F69;
 }
+
 .about-me-line{
     border-bottom: 1px solid black;
     max-width: 800px;
@@ -121,20 +136,19 @@ img.about{
     margin-top: 30px;
     margin-bottom: 30px;
 }
-
+h3.about{
+    text-align: center;
+    padding: 20px 0px;
+}
 
 /* education page css */
 .education-container{
     display: flex;
 }
 div.education{
-    margin: 20px 30px;
     width: 50%
 }
-h3.education{
-    margin-right: 70px;
-    
-}
+
 ul.education{
     margin-top: 20px;
     list-style-type: disc;
@@ -148,22 +162,21 @@ ul.education{
 .project-container{
     display: flex;
     margin: 20px 0px;
+    align-items: center;
 }
-.project-reverse-container{
-    display: flex;
-    margin: 20px 0px;
+div.project-img{
+    flex: 15%;
 }
 div.project-title{
-    flex: 45%;
+    flex: 25%;
     margin: 0px 20px;
 }
 div.project-description{
-    flex: 55%;
-    margin: 15px 20px;
+    flex: 60%;
 }
 img.project{
-    height: 200px;
     margin: 0px 20px;
+    width: 200px;
 }
 
 /* skills css */
@@ -201,15 +214,6 @@ div.skills-stars{
     h2{
         padding: 40px 0px;
         font-size: 25px;
-    }
-    .nav1:hover{
-        padding-top: 38px;
-        padding-bottom: 38px;
-    }
-    .nav2:hover{
-        padding-top: 38px;
-        padding-bottom: 38px;
-    
     }
     /* about css */
 

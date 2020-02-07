@@ -1,39 +1,36 @@
 <a href="#!Education">
-    <h2 class="nav1">Education<div class="line"></div>
+    <h2 class="education-nav">Education<div class="line"></div>
     </h2>
 </a>
 <a href="#!Projects" onclick='hide("projectsShow")'>
-    <h2 class="nav2">Projects<div class="line"></div>
+    <h2 class="projects-nav">Projects<div class="line"></div>
     </h2>
 </a>
 <div id="projectsShow">
+    <div class="display-width">
     <ul class="no-bullet">
-        <li ng-repeat="project in projectInfo">
-            <div ng-if="$odd" class="project-container">
+        <li ng-repeat="project in projectInfo" class="seperate-lists last-list">
+            <div class="project-container">
+                <div class="project-img">
+                    <img src='Images/{{project.img}}' class="project">
+                </div>
                 <div class="project-title">
-                    <h3><img src='Images/{{project.img}}' class="project">{{project.name}}</h3>
+                    <h3>{{project.name}}</h3>
                 </div>
                 <div class="project-description">
                     <p>{{project.description}}</p>
-                </div>
-            </div>
-            <div ng-if="$even" class="project-reverse-container">
-
-                <div class="project-description">
-                    <p>{{project.description}}</p>
-                </div>
-                <div class="project-title">
-                    <h3>{{project.name}}<img src='Images/{{project.img}}' class="project"></h3>
                 </div>
             </div>
         </li>
     </ul>
+    </div>
 </div>
 <a href="#!Skills">
-    <h2 class="nav1">Skills<div class="line"></div>
+    <h2 class="skills-nav">Skills<div class="line"></div>
     </h2>
 </a>
 <div>
-    <h2 class="nav2">Contact<div class="line"></div>
+    <h2 class="contact-nav">Contact<div class="line"></div>
     </h2>
+    
 </div>

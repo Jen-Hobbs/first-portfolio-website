@@ -1,7 +1,7 @@
-<a href="#!Education"><h2 class="nav1">Education<div class="line"></div></h2></a>
-<a href="#!Projects"><h2 class="nav2">Projects<div class="line"></div></h2></a>
-<a href="#!Skills" onclick='hide("skillDisplay")'><h2 class="nav1">Skills<div class="line"></div></h2></a>
-
+<a href="#!Education"><h2 class="education-nav">Education<div class="line"></div></h2></a>
+<a href="#!Projects"><h2 class="projects-nav">Projects<div class="line"></div></h2></a>
+<a href="#!Skills" onclick='hide("skillDisplay")'><h2 class="skills-nav">Skills<div class="line"></div></h2></a>
+<div class="display-width">
 <div id="skillDisplay">
     <ul class = "no-bullet">
         <li ng-repeat="skill in skillsInfo | orderBy : '-star'" class="skill">
@@ -27,5 +27,7 @@
         </li>
     </ul>
 </div>
+</div>
 <div class="clear"></div>
-<div><h2 class="nav2">Contact<div class="line"></div></h2></div>
+<div><h2 class="contact-nav">Contact<div class="line"></div>
+</h2></div>
