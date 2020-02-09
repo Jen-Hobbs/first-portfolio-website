@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Jen-Hobbs/personalWebsite/issues"
   },
-  "homepage": "https://github.com/Jen-Hobbs/personalWebsite#readme"
+  "homepage": "https://github.com/Jen-Hobbs/personalWebsite#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
 }
