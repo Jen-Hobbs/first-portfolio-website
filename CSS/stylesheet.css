@@ -88,6 +88,10 @@ p{
 }
 .contact-nav{
     background-color: #000000;
+
+}
+h2.contact-nav{
+    padding-bottom: 30px;
 }
 
 a:hover{
@@ -102,9 +106,10 @@ a{
     color: #BCABAE;
     text-align: center;
     font-family: 'Lora', serif;
-    margin: -40px auto 0px;
-    padding-bottom: 20px;
+    background-color: black;
+    padding-bottom: 40px;
 }
+
 .education-line{
     width: 500px;
     margin: auto;
