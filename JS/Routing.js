@@ -19,7 +19,7 @@ app.config(function($routeProvider){
 })
 
 app.controller('education', function($scope, $http){
-    $http.get("js/EducationInformation.json").then( function(response){
+    $http.get("JS/EducationInformation.json").then( function(response){
         $scope.educationInfo = response.data.education;
     });
 });
