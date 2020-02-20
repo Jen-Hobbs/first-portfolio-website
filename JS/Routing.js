@@ -1,4 +1,4 @@
-var app = angular.module("templater", ["ngRoute"]);
+var app = angular.module("templater", ["ngRoute", 'ngAnimate']);
 app.config(function($routeProvider){
     $routeProvider
     .when("/", {
