@@ -18,12 +18,15 @@
 <body ng-app="templater">
   
   <div ng-include="'templates/About.htm'"></div>
-  <h2 class="education-nav">Education<div class="education-line"></div></h2>
+  <h2>Education<div class="line"></div></h2>
   <div ng-include="'templates/Education.htm'"></div>
-  <h2 class="projects-nav">Projects<div class="line"></div></h2>
-  <div ng-include="'templates/Projects.htm'"></div>
- <h2 class="skills-nav">Skills<div class="line"></div></h2>
+  <div class="contact-nav">
+  <h2 class="contact-nav">Skills<div class="line"></div></h2>
   <div ng-include="'templates/Skills.htm'"></div>
+</div>
+  <h2>Projects<div class="line"></div></h2>
+  <div ng-include="'templates/Projects.htm'"></div>
+
   <div class="contact-nav"><h2 class="contact-nav">Contact<div class="line"></div></h2></div>
   
       <div class="linkedin">

@@ -6,10 +6,10 @@ body{
     margin-top: 0px;
 }
 h2{
-    color: #E3CAC8;
+    color:black;
     text-align: center;
     padding-top: 80px;
-    padding-bottom: 80px;
+    padding-bottom: 30px;
     margin: 0px;
     font-family: 'Lora', serif;
     font-weight: bold;
@@ -69,29 +69,21 @@ p{
 .line{
     width: 500px;
     margin: auto;
-    border-bottom: 2px solid #BCABAE;
+    border-bottom: 2px solid black;
     height: 30px;
 
 }
-.education-nav{
-    background-color: #D8D2DC;
-    color: black;
-}
-.education-nav:hover{
-    opacity: .6;
-}
-.skills-nav{
-    background-color: #122C34;
-}
-.projects-nav{
-    background-color: #283044;
-}
+
 .contact-nav{
     background-color: #000000;
-
+    color: white;
+}
+h2.contact-nav{
+    color: white;
 }
 h2.contact-nav{
     padding-bottom: 30px;
+    color: white;
 }
 
 a:hover{
