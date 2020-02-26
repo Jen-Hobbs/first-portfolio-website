@@ -66,24 +66,27 @@ p{
 }
 
 /* navigation buttons css */
-.line{
+.line, .line-dark-layout{
     width: 500px;
     margin: auto;
-    border-bottom: 2px solid black;
+    
     height: 30px;
 
 }
+.line{
+    border-bottom: 2px solid black;
+}
+.line-dark-layout{
+    border-bottom: 2px solid #BCABAE;
+}
+.dark-layout{
+    background-color: #000000;
+    color: #BCABAE;
+    padding-bottom: 20px;
+}
 
 .contact-nav{
-    background-color: #000000;
-    color: white;
-}
-h2.contact-nav{
-    color: white;
-}
-h2.contact-nav{
     padding-bottom: 30px;
-    color: white;
 }
 
 a:hover{
@@ -174,26 +177,28 @@ ul.education{
 /* projects page css */
 .project-container{
     display: flex;
-    margin: 20px 0px;
+    margin: 20px 0px;    
+    flex-wrap: wrap;
+
 }
-.project-container{
+div.project{
+    border: 2px dashed black;
+    padding: 20px;
+    margin: 20px;
+    width: 300px;
+    height: 300px;
     display: flex;
-    margin: 20px 0px;
-    align-items: center;
-}
-div.project-img{
-    flex: 15%;
-}
-div.project-title{
-    flex: 25%;
-    margin: 0px 20px;
-}
-div.project-description{
-    flex: 60%;
+    flex-direction: column;
+    font-size: 16px;
 }
 img.project{
-    margin: 0px 20px;
-    width: 200px;
+    max-width: 100%;
+    display: block;
+    max-height: 70%;
+}
+
+h3.project{
+    
 }
 
 /* skills css */
