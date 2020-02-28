@@ -1,20 +1,9 @@
 var app = angular.module("templater", ["ngRoute", 'ngAnimate']);
 app.config(function($routeProvider){
     $routeProvider
-    .when("/", {
-        templateUrl : "templates/Home.htm"
-    })
-    .when("/Education", {
-        templateUrl : "templates/Education.htm",
+    .when("/ProjectInfo", {
+        templateUrl : "templates/ProjectInfo.htm",
         controller: "education"
-    })
-    .when("/Projects", {
-        templateUrl : "templates/Projects.htm",
-        controller: "projects"
-    })
-    .when("/Skills", {
-        templateUrl : "templates/Skills.htm",
-        controller: "skills"
     })
 })
 

@@ -1,27 +1,42 @@
 <div ng-controller="projects">
-<div id="projectsShow">
-    <div class="display-width">
-        
-    <ul class="no-bullet project-container">
-        <li ng-repeat="project in projectInfo">
-            <div class="project">
-                <div class= "image-size">
-                    <img src='Images/{{project.img}}' class="project">
+    <div id="projectsShow">
+        <div class="display-width">
+            <div ng-if="DiscriptionNotNull">
+                <div class="project-description-container">
+                    <div class="project-description">
+                        <h2>{{description.name}}</h2>
+                        <img class="project-description" src='Images/{{description.img}}'>
+                    </div>
+                    <div class="project-description">                   
+                        <p class="project-description">{{description.description}}</p>
+                    </div>
+                    
+                    
                 </div>
-                <h3 class="project">{{project.name}}</h3>
+                <div class="project-description-container">
+                    <div class="project-description">
+                        <p>GitHub: <a href='{{description.git}}'>{{description.git}}</a></p>
+                    </div>
+                    <div class="project-description">
+                        <p>Website: <a href='{{description.website}}'>{{description.website}}</a></p>
+                    </div>
+                </div>
                 
-                
-                
-                <!-- <div class="project-description">
-                    <p>{{project.description}}</p>
-                </div> -->
                 
             </div>
-        </li>
-    </ul>
-    
-</div>
+            <ul class="no-bullet project-container">
+                <li ng-repeat="project in projectInfo" ng-click= "showDescription($index)">
+                    <div class="project">
+                        <div class="image-size">
+                            <img src='Images/{{project.img}}' class="project">
+                        </div>
+                        <h3 class="project">{{project.name}}</h3>
+                    </div>
+                    </a>
+                </li>
+            </ul>
+
+        </div>
     </div>
-</div>
 </div>
 <div class="clear"></div>

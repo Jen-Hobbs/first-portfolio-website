@@ -181,11 +181,32 @@ ul.education{
     flex-wrap: wrap;
 
 }
+.project-description-container{
+    display: flex;
+    margin: auto;    
+    flex-wrap: wrap;
+    align-items: center;
+    padding-bottom: 40px;
+}
+div.project-description{
+    flex: 50%;
+}
+img.project-description{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px;
+}
+p.project-description{
+    max-width: 900px;
+    margin: auto;
+    font-size: 20px;
+}
 div.project{
-    border: 2px dashed black;
-    padding: 20px;
-    margin: 20px;
-    width: 300px;
+    border: 1px dashed black;
+
+    margin: 10px;
+    width: 250px;
     height: 300px;
     display: flex;
     flex-direction: column;
@@ -194,11 +215,23 @@ div.project{
 img.project{
     max-width: 100%;
     display: block;
-    max-height: 70%;
+    max-height: 300px;
+    margin: auto;
+    padding: 10px;
+}
+.ng-show{
+    transition: all linear 1s;
+    background-color: lightblue;
+    height: 100px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    left: 0;
 }
 
 h3.project{
-    
+    margin: auto;
+    padding: 10px;
 }
 
 /* skills css */
