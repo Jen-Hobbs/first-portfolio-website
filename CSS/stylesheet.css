@@ -266,6 +266,7 @@ div.skills-stars{
 
 
 @media screen and (max-width: 700px){
+
     h2{
         padding: 40px 0px;
         font-size: 25px;
@@ -290,7 +291,10 @@ div.skills-stars{
 
     .line{
         width: 200px;
-        border-bottom: 2px solid #BCABAE;
+
+    }
+    .line-dark-layout{
+        width: 200px;
     }
     .education-container{
         flex-direction: column;
@@ -305,6 +309,17 @@ div.skills-stars{
     }
     h3.education{
         margin-right: 0px;
+    }
+    div.project{
+        margin: auto;
+        margin-bottom: 10px;
+    }
+    div.project-description-container{
+        margin: 10px 20px;
+        display: block;
+    }
+    img.project-description{
+        margin-bottom: 20px;
     }
     .project-container{
         flex-direction: column;
